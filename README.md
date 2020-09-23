@@ -1,0 +1,2 @@
+# AndroidGPUInspectorForUnity
+UnityでAndroid GPU Inspectorを使用する為のAndroidManifest.xmlのSample
