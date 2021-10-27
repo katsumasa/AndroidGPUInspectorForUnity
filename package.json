@@ -1,0 +1,30 @@
+{
+  "name": "com.utj.androidgpuinspectorforunity",
+  "displayName": "AndroidGPUInspectorForUnity",
+  "version": "0.1.0",
+  "unity": "2017.3",
+  "keywords": [
+    "unity",
+    "android",
+    "androidgpuinspector",
+    "performance",
+    "tools"
+  ],
+  "description": "Package for using the Android GPU Inspector with Unity.",
+  "dependencies": {
+  },
+  "author": {
+    "name": "Katsumasa.Kimura",
+    "email": "katsumasa@unity3d.com",
+    "url": "https://github.com/katsumasa"
+  },
+  "relatedPackages": {
+  },
+  "upmCi": {
+  },
+  "repository": {
+    "url": "https://github.com/katsumasa/AndroidGPUInspectorForUnity.git",
+    "type": "git",
+    "revision": "v0.1.0"
+  }
+}
