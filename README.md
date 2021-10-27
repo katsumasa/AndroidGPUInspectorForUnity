@@ -41,11 +41,12 @@ Android GPU Inspectorでプロファイリングを行う為には、[AndroidMan
 Android GPU Inspectorは[こちら](https://github.com/google/agi)から取得してください。
 
 
-![CaptureSystemProfile](https://user-images.githubusercontent.com/29646672/139029565-b9cbf54d-1061-4ef2-a031-a79dc4358711.jpg)
+
 
 1. Create a new traceを選択
   ![image](https://user-images.githubusercontent.com/29646672/139036473-87555766-e761-437c-bdee-8605734ef541.png)
 2. Device and Typeで[対応デバイス](https://gpuinspector.dev/docs/devices)を選択
+  ![CaptureSystemProfile](https://user-images.githubusercontent.com/29646672/139029565-b9cbf54d-1061-4ef2-a031-a79dc4358711.jpg)
 3. ApplicationからビルドしたアプリケーションのUnityPlayerActivityを選択
 4. OutputでOutput Directorを指定.
 5. Profilingを開始したいタイミングで、Startを押す。
