@@ -1,10 +1,16 @@
 # AndroidGPUInspectorForUnity
-Unityで[Android GPU Inspector](https://gpuinspector.dev/)を使用する為のAndroidManifest.xmlのSample
 
+Unityで[Android GPU Inspector](https://gpuinspector.dev/)を使用する為のパッケージです。
+
+## インストール
+
+本パッケージをAndroidGPUInspectorを使用したいプロジェクトに配置してください。
 
 ## 使い方
 
-1. [AndroidManifest.xml](https://github.com/katsumasa/AndroidGPUInspectorForUnity/blob/master/Assets/Plugins/Android/AndroidManifest.xml)を`Assets/Plugins/Android`へ配置する
+![image](https://user-images.githubusercontent.com/29646672/139030370-48abcf2d-686e-44f7-9858-475d7b394258.png)
+
+1. PlatformをAndroidへ切り替える
 2. Development Buildにチェックを入れる
 3. Buildを実行する
 
@@ -21,19 +27,26 @@ CommandWithNoStdoutInvokationFailure: Unable to start ADB server. Please make su
 ```
 
 ### 補足
+
 Android GPU Inspectorでプロファイリングを行う為には、[AndroidManifest.xml](https://github.com/katsumasa/AndroidGPUInspectorForUnity/blob/master/Assets/Plugins/Android/AndroidManifest.xml)に次の設定を追加する必要があります。
 
 - `<application [...] android:debuggable="true">`  [必須]
 - `<meta-data android:name="com.android.graphics.developerdriver.enable" android:value="true" />` [β版のGPU Driverを使用する場合のみ]
+  ※この行はコメントアウトされている為 、必要に応じて有効にして下さい。
 
-※詳細は(Getting Started)[https://gpuinspector.dev/docs/getting-started]のPrepare your applicationを参照
+※詳細は[Getting Started](https://gpuinspector.dev/docs/getting-started) のPrepare your applicationを参照
 
 ## Android GPU Inspectorの使い方
 
-![img](https://github.com/katsumasa/AndroidGPUInspectorForUnity/blob/master/Graphics/CaptureSystemProfile.jpg)
+Android GPU Inspectorは[こちら](https://github.com/google/agi)から取得してください。
+
+
+
 
 1. Create a new traceを選択
-2. Device and TypeでGoogle Pixel4 (Standard又はXL)を選択
+  ![image](https://user-images.githubusercontent.com/29646672/139036473-87555766-e761-437c-bdee-8605734ef541.png)
+2. Device and Typeで[対応デバイス](https://gpuinspector.dev/docs/devices)を選択
+  ![CaptureSystemProfile](https://user-images.githubusercontent.com/29646672/139029565-b9cbf54d-1061-4ef2-a031-a79dc4358711.jpg)
 3. ApplicationからビルドしたアプリケーションのUnityPlayerActivityを選択
 4. OutputでOutput Directorを指定.
 5. Profilingを開始したいタイミングで、Startを押す。
@@ -42,11 +55,11 @@ Android GPU Inspectorでプロファイリングを行う為には、[AndroidMan
 
 Durationで設定した時間Profilingを行った後、自動的にProfiling結果が表示されます。
 
-![img](https://github.com/katsumasa/AndroidGPUInspectorForUnity/blob/master/Graphics/Capturing.jpg)
+![Capturing](https://user-images.githubusercontent.com/29646672/139029618-0a1571eb-42e0-4c7c-be12-aff1aec2c9aa.jpg)
 
 ### `Android GPU Inspector`のキーアサイン
 
-![img](https://github.com/katsumasa/AndroidGPUInspectorForUnity/blob/master/Graphics/GPU%20Inspector.jpg)
+![GPU Inspector](https://user-images.githubusercontent.com/29646672/139029653-a49d6d42-526e-4939-a751-7416ac0a744d.jpg)
 
 ```
 W,S: Zoom In/Out
