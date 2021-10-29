@@ -2,13 +2,14 @@
 
 ## 概要
 
-Unityで[Android GPU Inspector](https://gpuinspector.dev/)を使用する為にビルド時にAndroidManifest.xmlを書き換えます。
+Unityでビルドしたバイナリで[Android GPU Inspector](https://gpuinspector.dev/)を使用する為にビルド時にAndroidManifest.xmlを書き換えます。
 
 ## インストール
 
+```
 git clone https://github.com/katsumasa/AndroidManifestReflection.git
 git cline https://github.com/katsumasa/AndroidGPUInspectorForUnity.git
-
+```
 
 ## 使い方
 
