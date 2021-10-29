@@ -10,9 +10,10 @@ Unityで[Android GPU Inspector](https://gpuinspector.dev/)を使用する為の�
 
 ![image](https://user-images.githubusercontent.com/29646672/139030370-48abcf2d-686e-44f7-9858-475d7b394258.png)
 
-1. PlatformをAndroidへ切り替える
-2. Development Buildにチェックを入れる
-3. Buildを実行する
+1. `Assets/Plugins/Android`ディレクトリへ本パッケージに含まれるAndroidManifest.xmlをコピーする。既に存在する場合はマージを行ってください。
+2. PlatformをAndroidへ切り替える
+3. Development Buildにチェックを入れる
+4. Buildを実行する
 
 以上
 
@@ -26,15 +27,18 @@ Unityで[Android GPU Inspector](https://gpuinspector.dev/)を使用する為の�
 CommandWithNoStdoutInvokationFailure: Unable to start ADB server. Please make sure the Android SDK is installed and is properly configured in the Editor. See the Console for more details.
 ```
 
-### 補足
+### AndroidManifest.xmlのマージ
 
-Android GPU Inspectorでプロファイリングを行う為には、[AndroidManifest.xml](https://github.com/katsumasa/AndroidGPUInspectorForUnity/blob/master/Assets/Plugins/Android/AndroidManifest.xml)に次の設定を追加する必要があります。
+Android GPU Inspectorでプロファイリングを行う為には、AndroidManifest.xmlへ設定を追加する必要があります。
+本パッケージには設定済みのAndroidManifest.xmlが同梱されている為、こちらを使用すれば問題ありませんが、既に独自のAndroidManifest.xmlが使用されている場合は、下記の内容を追加してください。
 
-- `<application [...] android:debuggable="true">`  [必須]
-- `<meta-data android:name="com.android.graphics.developerdriver.enable" android:value="true" />` [β版のGPU Driverを使用する場合のみ]
-  ※この行はコメントアウトされている為 、必要に応じて有効にして下さい。
+```
+  <application android:debuggable="true">
+  // If you are using beta GPU drivers,you should remove commentout next line.
+  // <meta-data android:name="com.android.graphics.developerdriver.enable" android:value="true" />
+  </application>
+```
 
-※詳細は[Getting Started](https://gpuinspector.dev/docs/getting-started) のPrepare your applicationを参照
 
 ## Android GPU Inspectorの使い方
 
