@@ -24,7 +24,7 @@ git cline https://github.com/katsumasa/AndroidGPUInspectorForUnity.git
 ### NOTE
 
 - Development Buildにチェックを入れない場合でもProfilingを行うことは可能ですが、Profiling可能な情報が制限されます。
-- Android GPU Inspectorwが実行された状態でビルドを実行すると次のエラーが発生します。ビルドを行う場合は必ず`Android GPU Inspector`を終了させておいて下さい。
+- Android GPU Inspectorが実行された状態でビルドを実行すると次のエラーが発生します。ビルドを行う場合は必ず`Android GPU Inspector`を終了させておいて下さい。
 
 
 ```
