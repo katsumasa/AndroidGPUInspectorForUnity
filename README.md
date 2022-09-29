@@ -8,7 +8,7 @@ Unityでビルドしたバイナリで[Android GPU Inspector](https://gpuinspect
 
 ```
 git clone https://github.com/katsumasa/AndroidManifestReflection.git
-git clne https://github.com/katsumasa/AndroidGPUInspectorForUnity.git
+git clone https://github.com/katsumasa/AndroidGPUInspectorForUnity.git
 ```
 
 ## 使い方
